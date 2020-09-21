@@ -5,15 +5,32 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></head>
 <body style="margin: 10px">
 
-	<nav id="navbar" style="margin: 10px">
-		<button type="button" class="btn btn-primary">Character Generation</button>
+	<nav id="navbar">
+		<button type="button" class="btn btn-primary" style="margin: 2px 0px">Character Generation</button>
+		<button type="button" class="btn btn-secondary" style="margin: 2px 0px">Online Tutorial Adventure</button>
+		<button type="button" class="btn btn-secondary" style="margin: 2px 0px">Pathfinder Society GM Tools</button>
 	</nav>
 	<hr>
 
-	<section id="section_chargen">
+	<section id="section_chargen" class="" style="max-width: 500px">
 		<form>
-			<input type="text" name="" placeholder="Character Name">
-			<input type="submit" name="">
+			<div class="form-group">
+    			<label for="s_chargen_charname">Character Name</label>
+				<input type="text" name="" placeholder="Character Name" id="s_chargen_charname" class="form-control">
+			</div>
+			<div class="form-group">
+				<select class="form-control">
+					<option>Dwarf</option>
+					<option>Human</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="submit" name="">
+			</div>
+		</form>
+
+		<form>
+			<p>STR</p>
 		</form>
 	</section>
 
