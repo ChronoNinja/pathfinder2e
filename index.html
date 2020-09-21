@@ -6,30 +6,28 @@
 <body style="margin: 10px">
 
 	<nav id="navbar">
-		<button type="button" class="btn btn-primary" style="margin: 2px 0px">Character Generation</button>
-		<button type="button" class="btn btn-secondary" style="margin: 2px 0px">Online Tutorial Adventure</button>
-		<button type="button" class="btn btn-secondary" style="margin: 2px 0px">Pathfinder Society GM Tools</button>
+		<button type="button" class="btn btn-primary" style="margin: 1px 0px">Character Generation</button>
+		<button type="button" class="btn btn-secondary" style="margin: 1px 0px">Online Tutorial Adventure</button>
+		<button type="button" class="btn btn-secondary" style="margin: 1px 0px">Pathfinder Society GM Tools</button>
 	</nav>
 	<hr>
 
-	<section id="section_chargen" class="" style="max-width: 500px">
-		<form>
+	<section id="section_chargen" class="d-flex flex-row" style="max-width: 500px">
+		<form class="p-2 m-1" style="background-color: orange">
 			<div class="form-group">
     			<label for="s_chargen_charname">Character Name</label>
-				<input type="text" name="" placeholder="Character Name" id="s_chargen_charname" class="form-control">
+				<input type="text" name="" placeholder="Mighty Hero" id="s_chargen_charname" class="form-control">
 			</div>
 			<div class="form-group">
-				<select class="form-control">
+    			<label for="s_chargen_ancestry">Ancestry</label>
+				<select class="form-control" id="s_chargen_ancestry">
 					<option>Dwarf</option>
 					<option>Human</option>
 				</select>
 			</div>
-			<div class="form-group">
-				<input type="submit" name="">
-			</div>
 		</form>
 
-		<form>
+		<form class="p-2 m-1" style="background-color: red">
 			<p>STR</p>
 		</form>
 	</section>
