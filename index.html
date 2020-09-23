@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>P2E Tools</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script type="text/javascript" src="script.js"></script>
+</head>
 <body style="margin: 10px">
 
 	<nav id="navbar">
@@ -12,8 +14,8 @@
 	</nav>
 	<hr>
 
-	<section id="section_chargen" class="d-flex flex-row" style="max-width: 500px">
-		<form class="p-2 m-1" style="background-color: orange">
+	<section id="section_chargen" class="d-flex flex-row">
+		<form class="p-2 m-1 border border-primary rounded">
 			<div class="form-group">
     			<label for="s_chargen_charname">Character Name</label>
 				<input type="text" name="" placeholder="Mighty Hero" id="s_chargen_charname" class="form-control">
@@ -21,14 +23,44 @@
 			<div class="form-group">
     			<label for="s_chargen_ancestry">Ancestry</label>
 				<select class="form-control" id="s_chargen_ancestry">
+					<option></option>
+					<option>Dwarf</option>
+					<option>Human</option>
+				</select>
+			</div>
+			<div class="form-group">
+    			<label for="s_chargen_heritage">Heritage</label>
+				<select class="form-control" id="s_chargen_heritage">
+					<option></option>
 					<option>Dwarf</option>
 					<option>Human</option>
 				</select>
 			</div>
 		</form>
 
-		<form class="p-2 m-1" style="background-color: red">
-			<p>STR</p>
+		<form class="p-2 m-1 border border-primary rounded">
+			<table class="table table-borderless">
+				<tbody>
+					<tr>
+						<td>STR</td><td>10</td>
+					</tr>
+					<tr>
+						<td>DEX</td><td>10</td>
+					</tr>
+					<tr>
+						<td>CON</td><td>10</td>
+					</tr>
+					<tr>
+						<td>CHA</td><td>10</td>
+					</tr>
+					<tr>
+						<td>INT</td><td>10</td>
+					</tr>
+					<tr>
+						<td>WIS</td><td>10</td>
+					</tr>
+				</tbody>
+			</table>
 		</form>
 	</section>
 
