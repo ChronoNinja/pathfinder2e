@@ -16,6 +16,7 @@
 
 	<section id="section_chargen" class="d-flex flex-row">
 		<form class="p-2 m-1 border border-primary rounded">
+			<h5 style="text-align: center">Character Details</h5>
 			<div class="form-group">
     			<label for="s_chargen_charname">Character Name</label>
 				<input type="text" name="" placeholder="Mighty Hero" id="s_chargen_charname" class="form-control">
@@ -25,6 +26,10 @@
 				<select class="form-control" id="s_chargen_ancestry">
 					<option></option>
 					<option>Dwarf</option>
+					<option>Elf</option>
+					<option>Gnome</option>
+					<option>Goblin</option>
+					<option>Halfling</option>
 					<option>Human</option>
 				</select>
 			</div>
@@ -39,25 +44,33 @@
 		</form>
 
 		<form class="p-2 m-1 border border-primary rounded">
+			<h5 style="text-align: center">Skills</h5>
+		</form>
+
+		<form class="p-2 m-1 border border-primary rounded">
+			<h5 style="text-align: center">Ability Scores</h5>
 			<table class="table table-borderless">
+				<thead>
+					<th>Stat</th><th>Value</th><th>Modifier</th>
+				</thead>
 				<tbody>
 					<tr>
-						<td>STR</td><td>10</td>
+						<td>STR</td><td id="s_str_value">10</td><td>+0</td>
 					</tr>
 					<tr>
-						<td>DEX</td><td>10</td>
+						<td>DEX</td><td id="s_dex_value">10</td><td>+0</td>
 					</tr>
 					<tr>
-						<td>CON</td><td>10</td>
+						<td>CON</td><td id="s_con_value">10</td><td>+0</td>
 					</tr>
 					<tr>
-						<td>CHA</td><td>10</td>
+						<td>INT</td><td id="s_int_value">10</td><td>+0</td>
 					</tr>
 					<tr>
-						<td>INT</td><td>10</td>
+						<td>WIS</td><td id="s_wis_value">10</td><td>+0</td>
 					</tr>
 					<tr>
-						<td>WIS</td><td>10</td>
+						<td>CHA</td><td id="s_cha_value">10</td><td>+0</td>
 					</tr>
 				</tbody>
 			</table>
